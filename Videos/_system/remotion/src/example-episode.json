@@ -1,0 +1,16 @@
+{
+  "subject": "Example Player",
+  "preset": "data_native",
+  "source": "verified records",
+  "musicVolume": 0.1,
+  "scenes": [
+    { "type": "sting", "durationInFrames": 45 },
+    { "type": "title", "durationInFrames": 90, "lines": ["The number", "everyone missed."], "sub": "A placeholder demo episode.", "sfx": "sfx_whoosh.mp3" },
+    { "type": "bar", "durationInFrames": 150, "title": "A metric over time", "sub": "Sample data, not a real player",
+      "data": [ { "label": "Season A", "value": 64, "highlight": true }, { "label": "Season B", "value": 28 } ] },
+    { "type": "stat", "durationInFrames": 120, "title": "Headline stats", "sfx": "sfx_tick.mp3",
+      "stats": [ { "value": 90, "label": "completion", "suffix": "%", "highlight": true }, { "value": 100, "label": "sample peak" }, { "value": 0, "label": "placeholder" } ] },
+    { "type": "title", "durationInFrames": 90, "lines": ["Swap this", "for a real", "episode."] },
+    { "type": "sting", "durationInFrames": 45 }
+  ]
+}

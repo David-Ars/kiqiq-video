@@ -1,0 +1,21 @@
+# Secrets — never commit
+*.key
+*.key.txt
+**/elevenlabs.key
+**/apifootball.key
+.env
+
+# Large local data archive
+Videos/_data/
+
+# Node / Remotion
+**/node_modules/
+Videos/_system/remotion/out/
+
+# Python
+**/__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db

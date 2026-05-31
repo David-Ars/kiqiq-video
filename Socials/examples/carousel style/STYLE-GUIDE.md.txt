@@ -1,0 +1,308 @@
+Carousel Style Reference Guide (Updated)
+Style 1: Navy Grid Minimalist (Cover-First Bold)
+
+Look:
+Clean, high-contrast carousel built on a deep navy (#0b1f3a) grid-textured background. The layout is text-led with oversized, bold sans-serif typography in white (#ffffff) and key words highlighted in bright green (#3edc6b).
+
+Key Elements:
+
+Subtle grid texture across the background
+Large stacked headline with selective green emphasis
+Brand logo in top-left (green square with white “K”)
+Decorative dotted arrow pattern (top-right) in green tones
+Minimal UI arrows/icons for navigation (bottom-right)
+Footer handle in white (e.g., @KiqIQ.com)
+
+Typography:
+
+Bold, modern sans-serif
+Strong hierarchy via scale, not weight variation
+Green used sparingly for emphasis words
+
+Best For:
+
+Covers
+Educational hooks
+Personal branding intros
+Style 2: Split Image + Content (Editorial Intro)
+
+Look:
+Top-half image (desaturated background with selective color emphasis), bottom-half navy content block. Clean editorial feel with strong readability.
+
+Key Elements:
+
+Image dominates top section
+Navy content block below
+Headline in white, large and left-aligned
+Brand lockup (logo + name) top-left
+Minimal icon overlays (rounded square UI element)
+
+Typography:
+
+Clean sans-serif
+Balanced spacing and line breaks
+
+Best For:
+
+Title slides
+Topic introductions
+Authority positioning
+Style 3: Green Card Content Block
+
+Look:
+Bold, modular layout using a full green (#3edc6b) card overlay on navy background. Feels like a “content card” UI.
+
+Key Elements:
+
+Bright green rectangular panel
+White text on green
+Small UI dots (top-left of card)
+Thin divider line under header
+Supporting paragraph in smaller text
+
+Typography:
+
+Large headline
+Compact supporting paragraph
+
+Best For:
+
+Myth-busting
+Key takeaways
+Single-point slides
+Style 4: Full Green Statement Slide
+
+Look:
+Minimal, high-impact slide with full green background and white typography. Clean and direct.
+
+Key Elements:
+
+Full-bleed green background
+White headline + paragraph
+Minimal decoration (dots + divider line)
+Occasional image below fold or transition area
+
+Typography:
+
+Bold headline
+Slightly smaller paragraph
+
+Best For:
+
+Strong claims
+Contrarian statements
+Key lessons
+Style 5: Overlay Card + Image Hybrid
+
+Look:
+Dynamic composition with green content card layered over an image background. Creates depth and movement.
+
+Key Elements:
+
+Image background (sports/action or lifestyle)
+Floating green card (left or center)
+White body text below on navy
+UI icon overlays
+
+Typography:
+
+Headline inside card
+Supporting text outside card
+
+Best For:
+
+Storytelling
+Explaining concepts
+Transitional slides
+Style 6: Split Grid Image Layout
+
+Look:
+Two-column or grid-style layout combining green text panel + repeated imagery. Structured and visually engaging.
+
+Key Elements:
+
+Left: green text block
+Right: stacked or duplicated images
+Bottom: navy section with paragraph text
+Directional arrow (bottom-left)
+
+Typography:
+
+Large headline in green panel
+Smaller explanatory text below
+
+Best For:
+
+Comparisons
+Content strategy points
+Visual storytelling
+Style 7: Dual Image + Content Panel
+
+Look:
+Balanced split between two images (or image + graphic) and a green content panel.
+
+Key Elements:
+
+Side-by-side imagery (e.g., device + UI)
+Green text block below
+White paragraph text
+Clean separation lines
+
+Typography:
+
+Strong headline
+Informational supporting text
+
+Best For:
+
+Educational breakdowns
+SEO/technical explanations
+Multi-context ideas
+Style 8: Bottom Image Anchor + Green Header
+
+Look:
+Content-first layout with green header block and image anchored at the bottom. Feels structured and grounded.
+
+Key Elements:
+
+Green headline section
+Navy mid-section divider
+Image at bottom
+Consistent UI icon placement
+
+Typography:
+
+Bold headline
+Medium-length paragraph
+
+Best For:
+
+Strategic insights
+Ads, growth, and performance topics
+Additional Style Variants (A–E)
+Style A: Human-Centric Split (People + Message)
+
+Look:
+Left-side lifestyle/business image, right-side green panel with bold messaging.
+
+Key Elements:
+
+Human-focused imagery (emotion, success, teamwork)
+Green panel with white headline
+Navy footer with paragraph
+
+Best For:
+
+Motivation
+Results-driven messaging
+Brand trust content
+Style B: Minimal Statement (Text-Only Authority)
+
+Look:
+Pure navy background with bold white headline and green highlight blocks.
+
+Key Elements:
+
+Large centered or left-aligned headline
+Green highlight box behind key sentence
+Subtle underline accent
+
+Best For:
+
+Quotes
+Thought leadership
+Personal brand messaging
+Style C: Pattern Accent Variation
+
+Look:
+Similar to Style 1 but introduces geometric accents (e.g., X patterns) instead of dotted arrows.
+
+Key Elements:
+
+Navy grid background
+White headline
+Green highlight elements
+Top-right pattern (X grid)
+
+Best For:
+
+Variation in long carousels
+Maintaining visual interest
+Style D: Repeated Statement Slide (Consistency Reinforcement)
+
+Look:
+Intentional reuse of strong statement layout for emphasis and retention.
+
+Key Elements:
+
+Identical structure to Style B/C
+Reinforces key idea visually
+
+Best For:
+
+Important takeaways
+Repetition for memory
+Style E: Call-to-Action (Closing Slide)
+
+Look:
+Clean, conversion-focused slide with strong CTA.
+
+Key Elements:
+
+Navy background
+Green highlight bar behind first line
+Large white text
+Navigation arrow + handle
+Brand presence reinforced
+
+Example Structure:
+
+“Want more tips?” (green highlight)
+Follow/share CTA in white
+
+Best For:
+
+Final slide
+Engagement prompts
+Growth-focused endings
+Core Design System (Across All Styles)
+
+Color Usage:
+
+#0b1f3a (Navy): Primary background
+#ffffff (White): Main text
+#3edc6b (Green): Highlights, panels, emphasis
+
+Typography:
+
+Clean, modern sans-serif
+Heavy use of scale for hierarchy
+Minimal font variation
+
+UI Elements:
+
+Rounded square icon (recurring motif)
+Three-dot indicator (top of cards)
+Thin divider lines
+Arrows for navigation
+
+Imagery:
+
+High contrast
+Slight desaturation with selective color emphasis (often red/green)
+Lifestyle + business hybrid visuals
+Quick Comparison Table
+Style	Layout Type	Background	Key Feature	Best For
+Style 1	Text-only	Navy grid	Green highlight words	Covers, hooks
+Style 2	Split	Image + navy	Editorial layout	Titles
+Style 3	Card	Green panel	UI-style block	Key points
+Style 4	Full color	Green	Bold statements	Strong claims
+Style 5	Overlay	Image + card	Depth layering	Storytelling
+Style 6	Grid	Mixed	Structured visuals	Comparisons
+Style 7	Split media	Images + green	Dual visuals	Education
+Style 8	Stacked	Green + image	Anchored layout	Strategy
+A	Split human	Image + green	Emotional appeal	Trust
+B	Minimal	Navy	Text-only authority	Quotes
+C	Pattern	Navy grid	X-pattern accent	Variation
+D	Repeat	Navy	Reinforcement	Key ideas
+E	CTA	Navy	Conversion-focused	Final slide
