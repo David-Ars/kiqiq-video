@@ -1,0 +1,308 @@
+{
+  "subject": "Sergio Busquets",
+  "preset": "data_native",
+  "source": "Verified public records; per-season defensive data per API-Football",
+  "audioSrc": "narration.mp3",
+  "musicVolume": 0.1,
+  "scenes": [
+    {
+      "type": "title",
+      "durationInFrames": 358,
+      "lines": [
+        "Eighteen goals.",
+        "Seven hundred games."
+      ],
+      "sub": "By the box score, he did almost nothing.",
+      "bg": "bg-cubist-01.png",
+      "sfx": "sfx_boom.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 245,
+      "src": "hero.png",
+      "caption": "Fourteen years. Two teams built their midfield around him.",
+      "sfx": "sfx_whoosh.mp3"
+    },
+    {
+      "type": "title",
+      "durationInFrames": 333,
+      "lines": [
+        "Either the eye was wrong,",
+        "or the box score was."
+      ],
+      "sub": "Let us put it to the test.",
+      "bg": "bg-cubist-02.png"
+    },
+    {
+      "type": "stat",
+      "durationInFrames": 434,
+      "title": "Barcelona, all competitions",
+      "stats": [
+        {
+          "value": 722,
+          "label": "appearances"
+        },
+        {
+          "value": 18,
+          "label": "goals",
+          "highlight": true
+        }
+      ],
+      "bg": "bg-cubist-01.png",
+      "sfx": "sfx_tick.mp3"
+    },
+    {
+      "type": "title",
+      "durationInFrames": 499,
+      "lines": [
+        "Strip out the cups.",
+        "481 league games.",
+        "Still tiny."
+      ],
+      "sub": "The output stays low at every scope.",
+      "bg": "bg-cubist-03.png"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 578,
+      "src": "pose-organising.png",
+      "caption": "Not a forward. A defensive midfielder. So judge the defensive work."
+    },
+    {
+      "type": "title",
+      "durationInFrames": 1138,
+      "lines": [
+        "Trusted at twenty-one.",
+        "Never taken back."
+      ],
+      "sub": "Guardiola handed him the base of the team with no reputation yet.",
+      "bg": "bg-cubist-02.png",
+      "sfx": "sfx_chime_soft.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 1095,
+      "src": "01-defensive-actions-by-season.png",
+      "caption": "Now judge the defensive work. Tackles and interceptions, La Liga, per API-Football",
+      "sfx": "sfx_riser.mp3"
+    },
+    {
+      "type": "title",
+      "durationInFrames": 618,
+      "lines": [
+        "The actions fell.",
+        "His place never did."
+      ],
+      "sub": "And not as a man they protected.",
+      "bg": "bg-cubist-01.png"
+    },
+    {
+      "type": "stat",
+      "durationInFrames": 522,
+      "title": "One title season, age 33",
+      "stats": [
+        {
+          "value": 36,
+          "label": "league starts"
+        },
+        {
+          "value": 3202,
+          "label": "minutes",
+          "highlight": true
+        }
+      ],
+      "bg": "bg-cubist-03.png",
+      "sfx": "sfx_impact.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 909,
+      "src": "pose-midpass.png",
+      "caption": "Older. Deeper. His team kept the ball. Honest reasons the line fell."
+    },
+    {
+      "type": "stat",
+      "durationInFrames": 836,
+      "title": "The season the tackles collapsed",
+      "stats": [
+        {
+          "value": 63,
+          "label": "tackles"
+        },
+        {
+          "value": 53,
+          "label": "interceptions",
+          "highlight": true
+        }
+      ],
+      "bg": "bg-cubist-02.png",
+      "sfx": "sfx_ping.mp3"
+    },
+    {
+      "type": "title",
+      "durationInFrames": 374,
+      "lines": [
+        "First, kill a myth.",
+        "He was never sent off?"
+      ],
+      "bg": "bg-cubist-01.png",
+      "sfx": "sfx_tension.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 120,
+      "src": "pose-walking.png",
+      "caption": "The last man before the defence. Hands rarely dirty.",
+      "sfx": "sfx_ping.mp3"
+    },
+    {
+      "type": "stat",
+      "durationInFrames": 1067,
+      "title": "Career red cards. Not never. Rarely.",
+      "stats": [
+        {
+          "value": 2,
+          "label": "La Liga"
+        },
+        {
+          "value": 1,
+          "label": "Champions Lg"
+        },
+        {
+          "value": 1,
+          "label": "in the USA"
+        }
+      ],
+      "bg": "bg-cubist-03.png",
+      "sfx": "sfx_impact.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 1178,
+      "src": "face-crop.png",
+      "caption": "No column for the pass he stopped by standing in its path."
+    },
+    {
+      "type": "title",
+      "durationInFrames": 324,
+      "lines": [
+        "The most important thing he did",
+        "was never counted."
+      ],
+      "bg": "bg-cubist-02.png",
+      "sfx": "sfx_downer.mp3"
+    },
+    {
+      "type": "bar",
+      "durationInFrames": 842,
+      "title": "What the team won with him in the side",
+      "sub": "Barcelona honours, by competition",
+      "data": [
+        {
+          "label": "La Liga",
+          "value": 9,
+          "highlight": true
+        },
+        {
+          "label": "Copa del Rey",
+          "value": 7
+        },
+        {
+          "label": "Supercopa",
+          "value": 7
+        },
+        {
+          "label": "Champions League",
+          "value": 3,
+          "highlight": true
+        },
+        {
+          "label": "UEFA Super Cup",
+          "value": 3
+        },
+        {
+          "label": "Club World Cup",
+          "value": 3
+        }
+      ],
+      "max": 10,
+      "bg": "bg-cubist-01.png",
+      "sfx": "sfx_riser.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 120,
+      "src": "pose-organising.png",
+      "caption": "Manager after manager left one thing alone: the pivot."
+    },
+    {
+      "type": "title",
+      "durationInFrames": 697,
+      "lines": [
+        "But did the system",
+        "make him?"
+      ],
+      "sub": "The strongest argument against all of it.",
+      "bg": "bg-cubist-03.png",
+      "sfx": "sfx_tension.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 315,
+      "src": "pose-on-ball.png",
+      "caption": "Take him out of the machine. See if the value travels."
+    },
+    {
+      "type": "stat",
+      "durationInFrames": 836,
+      "title": "It travelled. For Spain.",
+      "stats": [
+        {
+          "value": 143,
+          "label": "caps",
+          "highlight": true
+        },
+        {
+          "value": 1,
+          "label": "World Cup"
+        },
+        {
+          "value": 1,
+          "label": "Euro"
+        }
+      ],
+      "bg": "bg-cubist-01.png",
+      "sfx": "sfx_uplift.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 581,
+      "src": "pose-walking.png",
+      "caption": "Three teams. Three eras. One constant at the base of all of them."
+    },
+    {
+      "type": "title",
+      "durationInFrames": 927,
+      "lines": [
+        "The box score asked:",
+        "how much did he do.",
+        "The real question:",
+        "how much did he make unnecessary."
+      ],
+      "bg": "bg-cubist-02.png",
+      "sfx": "sfx_boom.mp3"
+    },
+    {
+      "type": "image",
+      "durationInFrames": 542,
+      "src": "hero.png",
+      "caption": "Next: a player the numbers loved, and the trophies never did.",
+      "sfx": "sfx_whoosh.mp3"
+    },
+    {
+      "type": "sting",
+      "durationInFrames": 45,
+      "sfx": "sfx_logo_chime.mp3"
+    }
+  ]
+}
