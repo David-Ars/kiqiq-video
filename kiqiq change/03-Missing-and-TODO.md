@@ -21,10 +21,10 @@ These cannot be copied here from this session — they live in repos/services th
 ## B. Decisions to make before the pivot build starts
 
 1. **Greenfield vs fork.** The stack doc recommends greenfield. Decide and write it down. Recommendation: greenfield repo, copy over only auth/billing/email/Sentry/PostHog plumbing; leave all football/prediction/betting code behind.
-2. **What happens to the live football site?** Keep it running during the pivot, sunset it, or 301 it to the new product? This affects domain usage (`kiqiq.com`), SEO equity from the 222-article blog, and existing paying subscribers.
-3. **Existing subscribers + Stripe.** There are live Stripe subscriptions (and David's lifetime-Pro row). Decide migration/refund/grandfathering before repointing the domain.
-4. **Domain + email.** `kiqiq.com` is the transactional sender (Resend, verified). The outreach engine needs a **separate** sending domain for cold email — pick and register it early (warmup takes weeks).
-5. **Blog/SEO equity.** 222 evergreen articles rank. Decide whether any are repurposed for the sponsorship audience or retired with redirects.
+2. **The football surfaces.** Only the homepage + blog are live and there are **no subscribers**, so there's nothing to migrate or grandfather — the football build can simply be left behind (greenfield) or torn out. Just decide whether the homepage + blog are kept/ported or also rebuilt.
+3. **Delete all email flows.** No email should remain active. In the old app repo: remove the Resend integration + `RESEND_API_KEY`, all templates, the NotifyForm / "Subscribe to digest" UI, and any cron/webhook that sends mail. (Going greenfield, simplest is to not port any of it.) `kiqiq.com`'s verified Resend sender domain can be left for *future* transactional mail or dropped.
+4. **Outreach sending domain.** The new outreach engine needs a **separate** sending domain for cold email — pick and register it early (warmup takes weeks). Keep it fully separate from any transactional domain.
+5. **Blog/SEO equity.** The evergreen blog is the one live asset with SEO value. Decide whether articles are repurposed for the sponsorship/club audience, kept as-is, or retired with redirects.
 6. **New name/positioning check.** Confirm "KiqIQ" still fits a B2B club-sponsorship product, or whether a sub-brand is wanted. (Spelling is always **KiqIQ**.)
 
 ## C. Gaps in this handover bundle itself (nice-to-have, not blocking)

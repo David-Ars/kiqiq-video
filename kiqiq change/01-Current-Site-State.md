@@ -8,9 +8,9 @@ Prepared 28 June 2026 for the move to the new laptop. This is the reference the 
 
 ## 1. What KiqIQ is today
 
-KiqIQ is a live, launched football-intelligence web app at **https://kiqiq.com** (custom domain — not the old `kiqiq.vercel.app` staging URL). It is positioned publicly as a "football intelligence OS", monetised via an AI analyst (`/ask`), betting-edge tools (value bets, trap games), fantasy tools, calculators, and a large evergreen blog. Predictions are deliberately *not* the moat — the interfaces, explainers and model transparency are.
+> **Reality check (28 June 2026, per David):** **Nothing is live except the homepage and the blog.** There are **no subscribers**. All other surfaces (`/ask`, football, value-bets, trap-games, fantasy, calculators, live match views, pricing/checkout) and all email flows are **not in active use** and are being stripped out for the pivot. The football-product detail below is recorded as *what exists in the codebase* so the new laptop knows what's there to remove or salvage — not as a running service.
 
-The product is **launched-pending-final-smoke-test**, not in active development from zero. Treat it as a real production system.
+KiqIQ's domain is **https://kiqiq.com** (custom domain — not the old `kiqiq.vercel.app` staging URL). What's actually live to the public is the **homepage + the evergreen blog**. The rest of the football-intelligence build (AI analyst, betting-edge tools, fantasy, calculators) exists in the repo but is being retired as part of the pivot.
 
 ## 2. Tech stack (existing app)
 
@@ -23,7 +23,7 @@ Full detail is in `KiqIQ-Tech-Stack.docx`. Summary, verified against `package.js
 - **Payments:** Stripe (Billing + subscriptions), Svix for webhook verification.
 - **AI `/ask` layer:** hybrid Anthropic Claude + OpenAI. Note: route.ts still used gpt-4o-mini at the time of the pricing plan; Haiku migration was the gating step for the new pricing.
 - **Rate limiting:** in-memory fallback — **Upstash Redis is NOT provisioned** (no keys set).
-- **Email:** Resend (transactional), sender domain `kiqiq.com` verified.
+- **Email:** Resend was wired for transactional email (welcome, digest, contact-form), sender domain `kiqiq.com` verified. **All email flows are being deleted** (see §5) — none should remain active.
 - **Monitoring/analytics:** Sentry (free tier), PostHog, Vercel Speed Insights.
 - **Football data:** API-Football (was the live provider) → **migrated to `DATA_PROVIDER=thestatsapi`** in production (2026-05-09). API-Football was code-retired 2026-05-10 **but `API_FOOTBALL_KEY` is still set in `.env.local` and Vercel**, so live pulls can still happen — remove the key from both to guarantee zero pulls.
 
@@ -38,7 +38,10 @@ Full detail is in `KiqIQ-Tech-Stack.docx`. Summary, verified against `package.js
 - **Blog corpus:** 222+ evergreen articles, 7 pillars, curated hub at `/blog`, cluster-based related-article wiring, cannibalisation 301s in `next.config.ts`.
 - **Geo-gating** (`src/lib/geo-gating.ts`): `/value-bets` and `/trap-games` restricted to the allow-listed markets; others redirect to `/licensing-jurisdictions`.
 
-## 4. Binding business decisions still in force
+## 4. Business decisions from the football product (historical reference)
+
+These governed the old football product. With nothing live but homepage + blog and no subscribers, most are **moot for the pivot** — kept here only so context isn't lost. The one item that still applies to all future work is the **writing standard** at the end.
+
 
 - **Pricing (2026-05-25):** four tiers — Free (£0, 3 *lifetime* queries), Starter £9.99/100 (Haiku), Pro £19.99/200 (Sonnet), Pro Max £39.99/500 (Sonnet + selective Opus, hard cap 30 Opus/mo). Plus one-off week packs and top-ups. Hard loss-prevention controls are mandatory (Opus caps, spend kill-switch at 120% budget, one-pack-per-card/IP/30-day, strict 3-lifetime free tier). Canonical doc: `docs/PRICING-AND-PACKAGES.md`. **Declined (do not re-propose):** annual pre-pay, refer-a-friend, pause subscription, auto-billing trials.
 - **Target market: 33 countries**, locked 2026-05-15 (`src/lib/geo-gating.ts` → `LAUNCH_SAFE_COUNTRIES`). No new market without engaged local legal counsel — competitor presence is *not* evidence of safety.
@@ -46,9 +49,17 @@ Full detail is in `KiqIQ-Tech-Stack.docx`. Summary, verified against `package.js
 - **Refunds:** none for used AI access; cancellation stops next renewal, access kept to period end. Stripe checkout has an explicit consent checkbox.
 - **Writing standard:** the AI-writing-tells doc (`docs/AI-WRITING-TELLS.md` in the app repo) applies to **all** text — no em dashes, banned vocab list, no "not just X but Y", sentence-case headings.
 
-## 5. Launch status
+## 5. Live status + what's being stripped (28 June 2026)
 
-Production cutover to kiqiq.com is complete (DNS, Clerk live mode, Stripe, webhooks all shipped). A middleware preview-access password gate is still on; **removing `PREVIEW_ACCESS_PASSWORD` + `PREVIEW_ACCESS_TOKEN` and redeploying is the final public-launch step.** Outstanding owner items at last record were the AI funnel smoke test and that env-var removal.
+**Live to the public:** homepage + blog only. **No subscribers.** Stripe/pricing were never taken into real revenue.
+
+Being removed for the pivot (exists in code, not wanted):
+
+- **All email flows — delete these.** Welcome email, weekly digest / NotifyForm, contact-form sends, and any cron-driven mail. Remove the Resend integration and `RESEND_API_KEY`, the email templates, the NotifyForm/"Subscribe to digest" UI, and any webhook/cron that triggers mail. (This must be done in the app repo — not possible from this handover folder; see `03-Missing-and-TODO.md` §A.)
+- All non-homepage/non-blog surfaces: `/ask`, `/football*`, `/value-bets`, `/trap-games`, `/insights`, fantasy, calculators, live match views, `/admin`.
+- Stripe checkout + pricing pages, geo-gating, the AI cost-tracking and abuse-prevention machinery.
+
+> Because the pivot is greenfield (see `02`), the cleanest route is to **not** carry these forward at all rather than delete them file-by-file in the old repo — keep the old repo as a read-only reference and build fresh. Confirm this in the greenfield-vs-fork decision.
 
 ## 6. Two separate repos — do not cross them
 

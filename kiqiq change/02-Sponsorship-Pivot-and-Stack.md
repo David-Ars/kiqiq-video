@@ -38,8 +38,8 @@ Phases 1–2 = a shippable paid product (clubs pay for profiles + resources). Ph
 
 ## What carries over from the old stack vs what's new
 
-- **Keep:** Next.js + Vercel, Supabase Postgres, Clerk, Stripe, Resend (transactional only), PostHog, Sentry, Claude.
-- **Drop:** all live sports-data (API-Football / TheStatsAPI), prediction/odds/Poisson engines, value-bets/trap-games/geo-gating, the football `/ask` intent system.
+- **Keep (as patterns/accounts, rebuilt greenfield):** Next.js + Vercel, Supabase Postgres, Clerk, Stripe, PostHog, Sentry, Claude.
+- **Drop:** all live sports-data (API-Football / TheStatsAPI), prediction/odds/Poisson engines, value-bets/trap-games/geo-gating, the football `/ask` intent system, **and all existing email flows** (none are wanted — rebuild transactional email only when the new product needs it, and keep cold-outreach mail on a separate domain).
 - **Add:** Clerk Organizations, Typesense, pgvector matching, Inngest, Smartlead/SES outreach (separate domain), Sanity, Cloudflare R2, Drizzle.
 
 ## Open decision: greenfield vs. fork

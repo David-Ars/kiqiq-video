@@ -15,9 +15,9 @@ Source documents (full detail):
 
 ## The one-paragraph version
 
-KiqIQ is a launched football-intelligence web app (Next.js 16 / Vercel / Supabase free tier / Clerk / Stripe / Claude+OpenAI) at **kiqiq.com**, fixed cost ~£19/mo. It's pivoting to a platform that helps UK clubs win sponsors — club profiles, sponsor directory, matching, in-app messaging, a gated resources library, and automated outreach, sold to clubs by subscription. The recommended path is a **greenfield** rebuild that keeps the auth/billing/email plumbing and the outreach engine (Inngest + Smartlead/SES + Clerk Organizations + pgvector matching) as the defensible core, and drops everything football-data/betting-specific.
+KiqIQ was built as a football-intelligence web app (Next.js 16 / Vercel / Supabase free tier / Clerk / Stripe / Claude+OpenAI) at **kiqiq.com**, fixed cost ~£19/mo. **Today only the homepage + blog are live, there are no subscribers, and all email flows are being deleted.** It's pivoting to a platform that helps UK clubs win sponsors — club profiles, sponsor directory, matching, in-app messaging, a gated resources library, and automated outreach, sold to clubs by subscription. The recommended path is a **greenfield** rebuild that keeps the auth/billing/email plumbing and the outreach engine (Inngest + Smartlead/SES + Clerk Organizations + pgvector matching) as the defensible core, and drops everything football-data/betting-specific.
 
 ## Two important reminders
 
-- **Code and secrets are not in this folder.** The live app lives in a separate repo (`Documents\Kiqiq\kiqiq`) and `.env.local`/Vercel hold the keys. See `03-Missing-and-TODO.md` section A.
+- **Code and secrets are not in this folder.** The app lives in a separate repo (`Documents\Kiqiq\kiqiq`) and `.env.local`/Vercel hold the keys. See `03-Missing-and-TODO.md` section A. Deleting email flows / football code must happen in that repo, not here.
 - **Spelling is always `KiqIQ`.**
